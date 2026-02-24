@@ -1,69 +1,79 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE LEGEND | 金沢 優輝</title>
+    <title>THE LEGEND | YUKI KANAZAWA</title>
     <style>
         body { 
-            font-family: "Times New Roman", "YuMincho", "serif"; 
-            background-color: #ffffff; color: #222; margin: 0; line-height: 1.8; text-align: center;
+            font-family: "Times New Roman", "Georgia", serif; 
+            background-color: #fff; color: #1a1a1a; margin: 0; line-height: 1.6; text-align: center;
         }
-        .hero { padding: 80px 20px; letter-spacing: 0.2em; border-bottom: 1px solid #000; }
-        .profile-img { width: 100%; max-width: 500px; height: auto; margin: 30px 0; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
-        h1 { font-size: 2.5rem; margin: 10px 0; font-weight: normal; }
-        .subtitle { font-size: 0.9rem; color: #888; text-transform: uppercase; }
+        /* マウスを乗せると拡大する設定 */
+        .profile-img { 
+            width: 100%; max-width: 500px; height: auto; margin: 40px 0;
+            transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1); /* なめらかな拡大 */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            cursor: crosshair;
+        }
+        .profile-img:hover {
+            transform: scale(1.03); /* ほんの少し拡大 */
+        }
         
-        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; text-align: left; }
-        h2 { font-size: 1.5rem; border-bottom: 2px solid #000; display: inline-block; margin-bottom: 30px; letter-spacing: 0.1em; }
+        .hero { padding: 100px 20px; letter-spacing: 0.3em; }
+        h1 { font-size: 3rem; margin: 10px 0; font-weight: 300; text-transform: uppercase; }
+        .subtitle { font-size: 0.8rem; color: #999; text-transform: uppercase; letter-spacing: 0.5em; }
+
+        .container { max-width: 700px; margin: 0 auto; padding: 60px 20px; text-align: left; }
+        h2 { font-size: 1.2rem; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 0.2em; }
         
-        .event { margin-bottom: 40px; }
-        .year { font-weight: bold; font-size: 1.1rem; display: block; margin-bottom: 5px; text-decoration: underline; }
-        .desc { font-size: 0.95rem; margin-left: 10px; }
-        .highlight { background: #f0f0f0; padding: 2px 5px; font-weight: bold; }
-        
-        .quote { font-style: italic; color: #555; border-left: 3px solid #ccc; padding-left: 15px; margin: 40px 0; }
+        .entry { margin-bottom: 50px; }
+        .label { font-size: 0.7rem; font-weight: bold; text-transform: uppercase; color: #555; display: block; margin-bottom: 10px; border: 1px solid #555; width: fit-content; padding: 2px 8px; }
+        .title { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; display: block; }
+        .content { font-size: 0.95rem; color: #444; }
+
+        .quote-box { background: #f9f9f9; padding: 40px; margin: 60px 0; font-style: italic; border-left: 5px solid #000; }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <p class="subtitle">Exclusive Interview</p>
-        <img src="kanazawa.jpg" alt="金沢 優輝" class="profile-img">
-        <h1>YUKI KANAZAWA</h1>
-        <p>The Genius Who Defies Definition</p>
+        <p class="subtitle">Personal Archive</p>
+        <img src="kanazawa.jpg" alt="Yuki Kanazawa" class="profile-img">
+        <h1>Yuki Kanazawa</h1>
+        <p style="font-size: 0.9rem; letter-spacing: 0.1em;">Intellectual Maverick & Visionary</p>
     </div>
 
     <div class="container">
-        <h2>ACADEMIC & TALENT</h2>
-        
-        <div class="event">
-            <span class="year">幼少期</span>
-            <p class="desc">言語処理IQが<span class="highlight">測定不能（カンスト）</span>を記録。幼少期より規格外の知性を証明。</p>
+        <h2>Unrivaled Trajectory</h2>
+
+        <div class="entry">
+            <span class="label">Genius</span>
+            <span class="title">Immeasurable Cognitive Ability</span>
+            <p class="content">Diagnosed with a verbal processing IQ so high it surpassed all standard measurement scales since childhood.</p>
         </div>
 
-        <div class="event">
-            <span class="year">高校</span>
-            <p class="desc">ケンブリッジ大学への留学、鉄緑会での研鑽。英検1級には<span class="highlight">上位3%</span>という圧倒的成績で合格。</p>
+        <div class="entry">
+            <span class="label">Global Academic</span>
+            <span class="title">Cambridge & Eiken Grade 1</span>
+            <p class="content">Studied abroad at the University of Cambridge. Certified Eiken Grade 1, ranking within the top 3% of all candidates.</p>
         </div>
 
-        <div class="event">
-            <span class="year">大学</span>
-            <p class="desc">Gemini評価業務において<span class="highlight">平均時給2万円</span>を叩き出す、知のプロフェッショナル。</p>
-            <p class="desc">「体育の授業を受けたくない」という独自の動機から、日本一の法科大学院に<span class="highlight">飛び級合格</span>（40分余らせての完勝）。</p>
+        <div class="entry">
+            <span class="label">The Legend</span>
+            <span class="title">Law School Leapfrog Success</span>
+            <p class="content">Skipped grades to pass the entrance exam for Japan's top law school, finishing 40 minutes early. Driven by a singular motivation: to avoid mandatory PE classes at ICU.</p>
         </div>
 
-        <div class="quote">
-            「慶応は通学が面倒で3日で辞めた。青学の入試はおもんなくて裏口から脱走した。」<br>
-            —— 既存の枠組みに収まりきらない、彼の美学がそこにある。
+        <div class="quote-box">
+            "Quit Keio University in 3 days because commuting was a hassle. Escaped Aoyama Gakuin's entrance exam through a locked back gate because it was uninspiring."
         </div>
 
-        <h2>WILD EPISODES</h2>
-        <div class="event">
-            <p class="desc">
-                恋愛歴では、元カノに30万円を盗まれるという災難や、警察が介入するほどの壮絶な別れを経験。
-                波乱万丈なエピソードさえも、彼のカリスマ性を形作る一部となっている。
-            </p>
+        <h2>Modern Professionalism</h2>
+        <div class="entry">
+            <span class="label">Elite Analyst</span>
+            <span class="title">Gemini AI Evaluation Specialist</span>
+            <p class="content">Achieved an average hourly rate of 20,000 JPY as an AI evaluator, proving intellectual value in the digital frontier.</p>
         </div>
     </div>
 
