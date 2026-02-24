@@ -3,71 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE EXCELLENCE | 金沢 優輝</title>
+    <title>THE LEGEND | 金沢 優輝</title>
     <style>
         body { 
             font-family: "Times New Roman", "YuMincho", "serif"; 
-            background-color: #ffffff; 
-            color: #222; 
-            margin: 0;
-            line-height: 1.8;
-            text-align: center;
+            background-color: #ffffff; color: #222; margin: 0; line-height: 1.8; text-align: center;
         }
-        .hero { 
-            padding: 80px 20px; 
-            letter-spacing: 0.2em;
-        }
-        /* 写真をおしゃれに見せるスタイル */
-        .profile-img {
-            width: 100%;
-            max-width: 500px; /* 写真の最大幅 */
-            height: auto;
-            margin: 30px 0;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* 柔らかい影 */
-            filter: contrast(1.1); /* 少しだけくっきりさせる */
-        }
+        .hero { padding: 80px 20px; letter-spacing: 0.2em; border-bottom: 1px solid #000; }
+        .profile-img { width: 100%; max-width: 500px; height: auto; margin: 30px 0; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         h1 { font-size: 2.5rem; margin: 10px 0; font-weight: normal; }
         .subtitle { font-size: 0.9rem; color: #888; text-transform: uppercase; }
         
-        .career { 
-            max-width: 600px; 
-            margin: 40px auto; 
-            text-align: left; 
-            padding: 40px;
-            border-top: 1px solid #eee;
-        }
-        .career h2 { font-size: 1.2rem; text-align: center; margin-bottom: 30px; }
-        .badge {
-            display: inline-block;
-            background: #000;
-            color: #fff;
-            padding: 5px 15px;
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-        }
+        .container { max-width: 700px; margin: 0 auto; padding: 40px 20px; text-align: left; }
+        h2 { font-size: 1.5rem; border-bottom: 2px solid #000; display: inline-block; margin-bottom: 30px; letter-spacing: 0.1em; }
+        
+        .event { margin-bottom: 40px; }
+        .year { font-weight: bold; font-size: 1.1rem; display: block; margin-bottom: 5px; text-decoration: underline; }
+        .desc { font-size: 0.95rem; margin-left: 10px; }
+        .highlight { background: #f0f0f0; padding: 2px 5px; font-weight: bold; }
+        
+        .quote { font-style: italic; color: #555; border-left: 3px solid #ccc; padding-left: 15px; margin: 40px 0; }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <p class="subtitle">Special Portrait</p>
-        
+        <p class="subtitle">Exclusive Interview</p>
         <img src="kanazawa.jpg" alt="金沢 優輝" class="profile-img">
-        
         <h1>YUKI KANAZAWA</h1>
-        <p>Intellectual & Passionate</p>
+        <p>The Genius Who Defies Definition</p>
     </div>
 
-    <section class="career">
-        <h2>HONORS & ACHIEVEMENTS</h2>
-        <div style="text-align: center;">
-            <div class="badge">英検1級 保持</div>
-            <p style="margin-top: 20px; font-size: 0.95rem;">
-                類稀なる語学力と、常に高みを目指す姿勢。<br>
-                彼の歩んできた華々しい経歴をここに記します。
+    <div class="container">
+        <h2>ACADEMIC & TALENT</h2>
+        
+        <div class="event">
+            <span class="year">Childhood</span>
+            <p class="desc">言語処理IQが<span class="highlight">測定不能（カンスト）</span>を記録。幼少期より規格外の知性を証明。</p>
+        </div>
+
+        <div class="event">
+            <span class="year">High School</span>
+            <p class="desc">ケンブリッジ大学への留学、鉄緑会での研鑽。英検1級には<span class="highlight">上位3%</span>という圧倒的成績で合格。</p>
+        </div>
+
+        <div class="event">
+            <span class="year">Professional</span>
+            <p class="desc">Gemini評価業務において<span class="highlight">平均時給2万円</span>を叩き出す、知のプロフェッショナル。</p>
+        </div>
+
+        <div class="event">
+            <span class="year">University & Beyond</span>
+            <p class="desc">「体育の授業を受けたくない」という独自の動機から、日本一の法科大学院に<span class="highlight">飛び級合格</span>（40分余らせての完勝）。</p>
+        </div>
+
+        <div class="quote">
+            「慶応は通学が面倒で3日で辞めた。青学の入試はおもんなくて裏口から脱走した。」<br>
+            —— 既存の枠組みに収まりきらない、彼の美学がそこにある。
+        </div>
+
+        <h2>WILD EPISODES</h2>
+        <div class="event">
+            <p class="desc">
+                私生活では、元カノに30万円を盗まれるという災難や、警察が介入するほどの壮絶な別れを経験。
+                波乱万丈なエピソードさえも、彼のカリスマ性を形作る一部となっている。
             </p>
         </div>
-    </section>
+    </div>
 
 </body>
 </html>
