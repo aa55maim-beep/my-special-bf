@@ -3,78 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE LEGEND | YUKI KANAZAWA</title>
+    <title>THE CHRONICLES | YUKI KANAZAWA</title>
     <style>
         body { 
             font-family: "Times New Roman", "Georgia", serif; 
-            background-color: #fff; color: #1a1a1a; margin: 0; line-height: 1.6; text-align: center;
+            background-color: #fff; color: #1a1a1a; margin: 0; line-height: 1.8; text-align: center;
         }
-        /* マウスを乗せると拡大する設定 */
+        .hero { padding: 100px 20px; letter-spacing: 0.3em; }
         .profile-img { 
             width: 100%; max-width: 500px; height: auto; margin: 40px 0;
-            transition: transform 0.5s cubic-bezier(0.2, 1, 0.3, 1); /* なめらかな拡大 */
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
             cursor: crosshair;
         }
-        .profile-img:hover {
-            transform: scale(1.03); /* ほんの少し拡大 */
-        }
+        .profile-img:hover { transform: scale(1.05); }
         
-        .hero { padding: 100px 20px; letter-spacing: 0.3em; }
         h1 { font-size: 3rem; margin: 10px 0; font-weight: 300; text-transform: uppercase; }
         .subtitle { font-size: 0.8rem; color: #999; text-transform: uppercase; letter-spacing: 0.5em; }
 
-        .container { max-width: 700px; margin: 0 auto; padding: 60px 20px; text-align: left; }
-        h2 { font-size: 1.2rem; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 0.2em; }
+        .container { max-width: 750px; margin: 0 auto; padding: 20px; text-align: left; }
         
-        .entry { margin-bottom: 50px; }
-        .label { font-size: 0.7rem; font-weight: bold; text-transform: uppercase; color: #555; display: block; margin-bottom: 10px; border: 1px solid #555; width: fit-content; padding: 2px 8px; }
-        .title { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; display: block; }
-        .content { font-size: 0.95rem; color: #444; }
+        /* セクション見出し */
+        h2 { 
+            font-size: 1.1rem; border-top: 1px solid #000; border-bottom: 1px solid #000;
+            padding: 15px 0; margin: 80px 0 40px 0; text-transform: uppercase; letter-spacing: 0.4em; text-align: center;
+        }
+        
+        .entry { margin-bottom: 60px; position: relative; }
+        .label { font-size: 0.7rem; color: #888; text-transform: uppercase; display: block; margin-bottom: 8px; }
+        .title { font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; display: block; letter-spacing: 0.05em; }
+        .content { font-size: 1rem; color: #333; }
 
-        .quote-box { background: #f9f9f9; padding: 40px; margin: 60px 0; font-style: italic; border-left: 5px solid #000; }
+        .highlight-text { background-color: #f0f0f0; padding: 0 4px; font-weight: bold; }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <p class="subtitle">Personal Archive</p>
+        <p class="subtitle">The Chronicles of a Genius</p>
         <img src="kanazawa.jpg" alt="Yuki Kanazawa" class="profile-img">
         <h1>Yuki Kanazawa</h1>
-        <p style="font-size: 0.9rem; letter-spacing: 0.1em;">Intellectual Maverick & Visionary</p>
     </div>
 
     <div class="container">
-        <h2>Unrivaled Trajectory</h2>
 
+        <h2>01. Childhood</h2>
         <div class="entry">
-            <span class="label">Genius</span>
-            <span class="title">Immeasurable Cognitive Ability</span>
-            <p class="content">Diagnosed with a verbal processing IQ so high it surpassed all standard measurement scales since childhood.</p>
+            <span class="label">Cognitive Benchmark</span>
+            <span class="title">Verbal IQ: Off the Charts</span>
+            <p class="content">Achieved a verbal processing IQ score so high it was <span class="highlight-text">beyond measurement limits</span>. His intellectual journey began where most scales end.</p>
         </div>
 
+        <h2>02. High School Days</h2>
         <div class="entry">
             <span class="label">Global Academic</span>
-            <span class="title">Cambridge & Eiken Grade 1</span>
-            <p class="content">Studied abroad at the University of Cambridge. Certified Eiken Grade 1, ranking within the top 3% of all candidates.</p>
+            <span class="title">Cambridge & Elite Preparation</span>
+            <p class="content">Studied at the <span class="highlight-text">University of Cambridge</span>. Honed his expertise at the prestigious Tetsuryokukai. Certified with Eiken Grade 1, scoring in the <span class="highlight-text">Top 3%</span> nationwide.</p>
+        </div>
+        <div class="entry">
+            <span class="label">The Rebel</span>
+            <span class="title">Institutional Defiance</span>
+            <p class="content">Quit Keio High School in just 3 days due to the mundane commute. Escaped the Aoyama Gakuin entrance exam through a locked back gate, seeking more inspired challenges.</p>
         </div>
 
+        <h2>03. University & Career</h2>
         <div class="entry">
-            <span class="label">The Legend</span>
+            <span class="label">Academic Triumph</span>
             <span class="title">Law School Leapfrog Success</span>
-            <p class="content">Skipped grades to pass the entrance exam for Japan's top law school, finishing 40 minutes early. Driven by a singular motivation: to avoid mandatory PE classes at ICU.</p>
+            <p class="content">Skipped academic years to pass the entrance exam for Japan's premier law school, finishing the exam <span class="highlight-text">40 minutes early</span>. His motivation: bypassing mandatory PE classes at ICU.</p>
         </div>
-
-        <div class="quote-box">
-            "Quit Keio University in 3 days because commuting was a hassle. Escaped Aoyama Gakuin's entrance exam through a locked back gate because it was uninspiring."
-        </div>
-
-        <h2>Modern Professionalism</h2>
         <div class="entry">
-            <span class="label">Elite Analyst</span>
-            <span class="title">Gemini AI Evaluation Specialist</span>
-            <p class="content">Achieved an average hourly rate of 20,000 JPY as an AI evaluator, proving intellectual value in the digital frontier.</p>
+            <span class="label">Professional Value</span>
+            <span class="title">AI Evaluation Specialist</span>
+            <p class="content">Leveraged his intellect as a Gemini AI evaluator, commanding an average hourly rate of <span class="highlight-text">20,000 JPY</span>.</p>
         </div>
+        <div class="entry">
+            <span class="label">Personal Saga</span>
+            <span class="title">High-Stakes Private Life</span>
+            <p class="content">Experienced a life of intense drama, from financial betrayals to police mediation—episodes that only add to his enigmatic persona.</p>
+        </div>
+
     </div>
 
 </body>
